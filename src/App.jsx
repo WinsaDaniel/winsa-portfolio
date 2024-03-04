@@ -7,6 +7,7 @@ function App() {
   const toggleMenu = () => {
     setOpen(!open);
   };
+
   return (
     <div className="bg-teal-600">
       <div className="bg-teal-600">
@@ -142,16 +143,20 @@ function App() {
         </div>
 
         <div className="flex justify-center mb-5">
-          <button className="bg-teal-600 hover:bg-teal-700 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-            <svg
-              className="fill-current w-4 h-4 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>Download cv</span>
-          </button>
+          {/* <a
+            href="../WINSA DANIEL.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open CV
+          </a> */}
+          <a
+            className=" justify-center w-50 p-3 bg-teal-600 text-white rounded-md hover:bg-blue-600"
+            href="../WINSA DANIEL.docx"
+            target="_blank"
+          >
+            Download cv
+          </a>
         </div>
 
         <h1 className="font-roboto text-lg text-teal-800 text-center mb-5 underline">
@@ -438,13 +443,10 @@ function App() {
               </div>
             </div>
           </div>
+          <button className=" justify-center w-50 p-3 bg-teal-600 text-white rounded-md hover:bg-blue-600">
+            goto my gitHub
+          </button>
         </div>
-        <button
-          type="submit"
-          className=" justify-center w-50 p-3 bg-teal-600 text-white rounded-md hover:bg-blue-600"
-        >
-          go to my git Hub
-        </button>
 
         <div className=" p-8 rounded shadow-md max-w-md w-full mx-auto mb-5">
           <h2 className="font-roboto text-lg text-stone-800 text-center underline mb-5">
@@ -558,7 +560,12 @@ function App() {
 
       <div className="mb-1 mt-4">
         <div className="flex flex-row items-center gap-3  justify-center">
-          <Icon icon="logos:facebook" width="32" height="32" />
+          <Icon
+            href="https://www.facebook.com/winsa.daniel"
+            icon="logos:facebook"
+            width="32"
+            height="32"
+          />
           <Icon
             icon="ri:twitter-x-line"
             width="32"
@@ -566,11 +573,18 @@ function App() {
             // style={{ color: #141111 }}
           />
           <Icon icon="logos:whatsapp-icon" width="32" height="32" />
-          <Icon icon="devicon:linkedin" width="32" height="32" />
+          <Icon
+            icon="devicon:linkedin"
+            width="32"
+            height="32"
+            href="https://www.linkedin.com/in/winsa-daniel/"
+          />
           <Icon
             icon="radix-icons:github-logo"
             width="32"
             height="32"
+            href="https://github.com/WinsaDaniel"
+
             // style={{ color: rgb(255, 255, 255) }}
           />
         </div>
