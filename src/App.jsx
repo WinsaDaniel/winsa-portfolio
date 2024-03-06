@@ -94,7 +94,7 @@ function App() {
             ABOUT ME{" "}
           </h1>
           <div className="flex justify-center mb-4 ">
-            <p className="mx-auto max-w-[90%] text-sm space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 ">
+            <p className="mx-auto max-w-[90%] text-sm space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 text-center ">
               Hey there! My name is Winsa Daniel, I am a front-end developer,
               and my role revolves around crafting the look, feel, and
               functionality of websites and web applications that users interact
