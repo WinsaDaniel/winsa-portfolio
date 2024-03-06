@@ -111,7 +111,7 @@ function App() {
                 Open CV
               </a>
             </button> */}
-            <a href="/XV.docx" rel="noopener noreferrer" target="_blank">
+            <a href="/CV.docx" rel="noopener noreferrer" target="_blank">
               <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
                 Open CV
               </button>
