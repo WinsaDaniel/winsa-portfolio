@@ -13,76 +13,75 @@ function App() {
     <div className="bg-teal-600">
       <div className="bg-teal-600">
         <div className="w-full text-stone-100 bg-teal-600 dark-mode:text-stone-200 dark-mode:bg-gray-800">
-          <div className="flex flex-row  max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 ">
-            <div className="p-4 flex flex-col items-center justify-between">
-              {/* <a
-                href="#"
-                className="text-lg font-semibold tracking-widest text-stone-100 uppercase dark-mode:text-white focus:outline-none focus:shadow-outline"
-              >
-                Winsa Daniel Frontend developer
-              </a> */}
-              <header className="md:text-lg text-xs font-semibold  text-stone-100 uppercase">
-                {" "}
-                Winsa Daniel
-              </header>
-              <h2 className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
-                Frontend developer
-              </h2>
-              <button
-                className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                onClick={toggleMenu}
-              >
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  className="w-6 h-6"
+          <div className="flex flex-row  max-w-screen-xl  mx-auto md:items-center justify-between md:flex-row md:px-6 ">
+            <div className="p-4 flex flex-row  justify-between">
+              <div>
+                <header className="md:text-lg text-xs font-semibold  text-stone-100 uppercase">
+                  Winsa Daniel
+                </header>
+                <h2 className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
+                  Frontend developer
+                </h2>
+              </div>
+              <div>
+                <button
+                  className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+                  onClick={toggleMenu}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d={
-                      open
-                        ? "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        : "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                    }
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d={
+                        open
+                          ? "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          : "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                      }
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <nav
-              className={`flex-col flex-grow pb-4 md:pb-0 ${
-                open ? "flex" : "hidden"
-              } md:flex md:justify-end md:flex-row`}
-            >
-              <Link
-                to="about"
-                smooth={true}
-                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            <div>
+              <nav
+                className={`flex-col  pb-4 md:pb-0 ${
+                  open ? "flex" : "hidden"
+                } md:flex md:justify-end md:flex-row`}
               >
-                About
-              </Link>
-              <Link
-                to="skills"
-                smooth={true}
-                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              >
-                Skills
-              </Link>
-              <Link
-                to="project"
-                smooth={true}
-                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              >
-                Project
-              </Link>
-              <Link
-                to="contact"
-                smooth={true}
-                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              >
-                Contact
-              </Link>
-            </nav>
+                <Link
+                  to="about"
+                  smooth={true}
+                  className="px-4 py-2 mt-2 text-xs md:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                >
+                  About
+                </Link>
+                <Link
+                  to="skills"
+                  smooth={true}
+                  className="px-4 py-2 mt-2 text-xs md:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                >
+                  Skills
+                </Link>
+                <Link
+                  to="project"
+                  smooth={true}
+                  className="px-4 py-2 mt-2 text-xs md:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                >
+                  Project
+                </Link>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  className="px-4 py-2 mt-2 text-xs md:text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                >
+                  Contact
+                </Link>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +93,7 @@ function App() {
             ABOUT ME{" "}
           </h1>
           <div className="flex justify-center mb-4 ">
-            <p className="mx-auto max-w-[90%] text-sm space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 text-center ">
+            <p className="mx-auto max-w-[90%] text-xs md:text-sm space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 text-center ">
               Hey there! My name is Winsa Daniel, I am a front-end developer,
               and my role revolves around crafting the look, feel, and
               functionality of websites and web applications that users interact
@@ -106,12 +105,7 @@ function App() {
 
           <div className="flex justify-center mb-5">
             <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
-              {" "}
-              <a
-                href="../public/winsa.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/winsa.pdf" rel="noopener noreferrer" target="_blank">
                 Open CV
               </a>
             </button>
@@ -122,7 +116,7 @@ function App() {
           <h1 className="font-roboto text-sm md:text-lg text-teal-800 text-center mt-9  mb-2">
             PROJECTS
           </h1>
-          <p className="font-roboto text-sm text-teal-900 text-center mb-4  ">
+          <p className="font-roboto text-xs md:text-sm text-teal-900 text-center mb-4  ">
             hello again , these are among the websites I worked on, for more
             click on gitHub icon below
           </p>
@@ -253,7 +247,7 @@ function App() {
           <h1 className="font-roboto md:text-lg text-teal-800 text-center mt-7 mb-1 text-sm">
             MY SKILLS
           </h1>
-          <p className="  text-sm text-teal-800 text-center mb-1 ">
+          <p className="  text-xs md:text-sm text-teal-800 text-center mb-1 ">
             I have been learning and working on these skills to boost my
             knowledge on website development
           </p>
