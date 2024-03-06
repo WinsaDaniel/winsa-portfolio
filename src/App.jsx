@@ -145,7 +145,7 @@ function App() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mx-4 ml-7 ">
-            <div className="   justify-center ">
+            <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
                 <div className="p-4">
                   <img
@@ -179,12 +179,12 @@ function App() {
               </div>
             </div>
 
-            <div className="min-h-screen  ">
+            <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
                 <div className="p-4">
                   <img
                     className="rounded-xl"
-                    src="../Screenshot1 .png"
+                    src="Screenshot1 .png"
                     alt="Dog"
                   />
                 </div>
@@ -213,10 +213,10 @@ function App() {
               </div>
             </div>
 
-            <div className="min-h-screen  ">
+            <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
                 <div className="p-4">
-                  <img className="rounded-xl" src="/laptop.png" />
+                  <img className="rounded-xl" src="/SS .PNG" />
                 </div>
                 <div className="flex justify-between p-6">
                   <div className="flex items-center space-x-4">
