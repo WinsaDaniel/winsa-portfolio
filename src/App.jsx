@@ -19,7 +19,7 @@ function App() {
                 <header className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
                   Winsa Daniel
                   <br />
-                  Frontend developer
+                  <span className="text-stone-800">FRONTEND DEVELOPER</span>
                 </header>
                 {/* <h2 className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
                   
@@ -91,27 +91,30 @@ function App() {
       <main className="text-teal-800 bg-green-100">
         <div className="border-t-4 border-teal-800 mt-3 pt-3"></div>
         <Element id="about">
-          <h1 className="bold text-sm  *:text-stone-100 font-roboto md:text-lg text-teal-900 mb-2 mt-7 capitalize  text-center">
+          <h1 className="bold text-sm  *:text-stone-100 font-roboto md:text-lg text-teal-900 mb-2 mt-10 capitalize  text-center">
             ABOUT ME{" "}
           </h1>
           <div className="flex justify-center mb-4 ">
-            <p className="mx-auto max-w-[90%] text-xs md:text-sm space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 text-center ">
-              Hey there! My name is Winsa Daniel, I am a front-end developer,
-              and my role revolves around crafting the look, feel, and
-              functionality of websites and web applications that users interact
-              with directly. I specialize in bringing designs to life, ensuring
-              they are not just visually appealing but also intuitive and
-              engaging to use.
+            <p className="mx-auto max-w-[90%] text-xs md:text-[17px] space-x-0 gap-1 font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]  text-teal-900 text-center ">
+              Hey there! My name is{" "}
+              <span className="inline-flex items-baseline">
+                <img
+                  src="w.jpg"
+                  alt=""
+                  className="self-center w-5 h-5 rounded-full mx-1"
+                />
+                <span className="text-yellow-700">WINSA DANIEL</span>
+              </span>
+              , I am a front-end developer, and my role revolves around crafting
+              the look, feel, and functionality of websites and web applications
+              that users interact with directly. I specialize in bringing
+              designs to life, ensuring they are not just visually appealing but
+              also intuitive and engaging to use.
             </p>
           </div>
 
           <div className="flex justify-center mb-5">
-            {/* <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
-              <a href="/winsa.pdf" rel="noopener noreferrer" target="_blank">
-                Open CV
-              </a>
-            </button> */}
-            <a href="/CV.docx" rel="noopener noreferrer" target="_blank">
+            <a href="CV.pdf" rel="noopener noreferrer" target="_blank">
               <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
                 Open CV
               </button>
@@ -120,14 +123,14 @@ function App() {
         </Element>
 
         <Element id="project">
-          <h1 className="font-roboto text-sm md:text-lg text-teal-800 text-center mt-9  mb-2">
+          <h1 className="font-roboto text-sm md:text-lg text-teal-800 text-center mt-10  mb-2">
             PROJECTS
           </h1>
-          <p className="font-roboto text-xs md:text-sm text-teal-900 text-center mb-4  ">
+          <p className="font-roboto text-xs md:text-[17px] text-teal-900 text-center mb-4  ">
             hello again , these are among the websites I worked on, for more
             click on gitHub icon below
           </p>
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center mb-5 hover:scale-105">
             <a
               href="https://github.com/WinsaDaniel"
               target="_blank"
@@ -143,12 +146,12 @@ function App() {
             </a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mx-4 ml-7 ">
+          <div className="flex flex-wrap md:grid-rows-3 justify-center gap-4 mx-4 mb-8  ">
             <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
                 <div className="p-4">
                   <img
-                    className="rounded-xl"
+                    className="rounded-xl  "
                     src="/Capture.PNG"
                     alt="CAPTURE"
                   />
@@ -180,7 +183,7 @@ function App() {
 
             <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
-                <div className="p-4">
+                <div className=" p-4">
                   <img
                     className="rounded-xl"
                     src="Screenshot1 .png"
@@ -244,15 +247,15 @@ function App() {
         </Element>
 
         <Element id="skills">
-          <h1 className="font-roboto md:text-lg text-teal-800 text-center mt-7 mb-1 text-sm">
+          <h1 className="font-roboto md:text-lg text-teal-800 text-center mt-10 mb-1 text-sm">
             MY SKILLS
           </h1>
-          <p className="  text-xs md:text-sm text-teal-800 text-center mb-1 ">
+          <p className="  text-xs md:text-[17px] text-teal-800 text-center mb-1 ">
             I have been learning and working on these skills to boost my
             knowledge on website development
           </p>
 
-          <div className="flex flex-wrap mx-auto max-w-[90%] text-xs font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%]">
+          <div className="flex flex-wrap mx-auto max-w-[90%] text-xs font-normal  tracking-wide   md:leading-relaxed md:max-w-[85%]  lg:max-w-[75%] md:mb-10">
             <div className="max-w-xs mx-auto text-center">
               <Icon
                 icon="vscode-icons:file-type-js-official"
@@ -346,8 +349,8 @@ function App() {
           </div>
         </Element>
         <Element id="contact">
-          <div className=" p-8 rounded shadow-md max-w-md w-full mx-auto mt-8 mb-5">
-            <h2 className="font-roboto text-sm md:text-lg text-tale-800 text-center mb-5">
+          <div className=" p-8 rounded shadow-md max-w-md w-full mx-auto  mb-5 mt-10">
+            <h2 className="font-roboto text-sm md:text-[60px] text-tale-800 text-center mb-5">
               CONTACT ME
             </h2>
 
@@ -361,7 +364,7 @@ function App() {
               <div>
                 <label
                   htmlFor="firstName"
-                  className="block md:text-sm text-xs font-medium text-tale-800"
+                  className="block md:text-[17px] text-xs font-medium text-tale-800"
                 >
                   Name
                 </label>
@@ -377,7 +380,7 @@ function App() {
               <div className="mt-4">
                 <label
                   htmlFor="email"
-                  className="block md:text-sm text-xs font-medium text-tale-800"
+                  className="block md:text-[17px] text-xs font-medium text-tale-800"
                 >
                   E-mail
                 </label>
