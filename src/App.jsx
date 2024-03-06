@@ -220,7 +220,7 @@ function App() {
                 <div className="p-4">
                   <img
                     className="rounded-xl"
-                    src="../public/images/laptop.jpg"
+                    src="../public/images/laptop.svg"
                   />
                 </div>
                 <div className="flex justify-between p-6">
