@@ -180,6 +180,34 @@ function App() {
                 </div>
               </div>
             </div>
+            <div>
+              <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
+                <div className="p-4">
+                  <img className="rounded-xl" src="/SS .PNG" />
+                </div>
+                <div className="flex justify-between p-6">
+                  <div className="flex items-center space-x-4">
+                    <h1 className="text-xs md:text-xs text-teal-800 font-bold">
+                      Popcorn 🍿
+                    </h1>
+                    <a
+                      href="https://github.com/WinsaDaniel/usePopCorn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon
+                        icon="radix-icons:github-logo"
+                        width="32"
+                        height="32"
+                        href="https://github.com/WinsaDaniel/usePopCorn"
+
+                        // style={{ color: rgb(255, 255, 255) }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div>
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
@@ -206,35 +234,6 @@ function App() {
                         width="32"
                         height="32"
                         href="https://github.com/WinsaDaniel/Fast-pizza"
-
-                        // style={{ color: rgb(255, 255, 255) }}
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
-                <div className="p-4">
-                  <img className="rounded-xl" src="/SS .PNG" />
-                </div>
-                <div className="flex justify-between p-6">
-                  <div className="flex items-center space-x-4">
-                    <h1 className="text-xs md:text-xs text-teal-800 font-bold">
-                      Popcorn 🍿
-                    </h1>
-                    <a
-                      href="https://github.com/WinsaDaniel/usePopCorn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon
-                        icon="radix-icons:github-logo"
-                        width="32"
-                        height="32"
-                        href="https://github.com/WinsaDaniel/usePopCorn"
 
                         // style={{ color: rgb(255, 255, 255) }}
                       />
@@ -478,10 +477,11 @@ function App() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="text-[17px]">
           {" "}
-          <p className=" text-stone-100 text-center ">designed and built by</p>
+          <p className=" text-stone-100 text-center ">Designed and built by</p>
           <p className="text-yellow-800 text-center mb-1">Winsa Daniel</p>
+          <p className=" text-stone-100 text-center">+251920346765</p>
         </div>
       </div>
     </div>
