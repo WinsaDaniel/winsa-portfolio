@@ -15,13 +15,15 @@ function App() {
         <div className="w-full text-stone-100 bg-teal-600 dark-mode:text-stone-200 dark-mode:bg-gray-800">
           <div className="flex flex-row  max-w-screen-xl  mx-auto md:items-center justify-between md:flex-row md:px-6 ">
             <div className="p-4 flex flex-row  justify-between">
-              <div>
+              <div className="flex flex-row justify-between">
                 <header className="md:text-lg text-xs font-semibold  text-stone-100 uppercase">
                   Winsa Daniel
-                </header>
-                <h2 className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
+                  <br />
                   Frontend developer
-                </h2>
+                </header>
+                {/* <h2 className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
+                  
+                </h2> */}
               </div>
               <div>
                 <button
@@ -104,11 +106,17 @@ function App() {
           </div>
 
           <div className="flex justify-center mb-5">
-            <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
+            {/* <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
               <a href="/winsa.pdf" rel="noopener noreferrer" target="_blank">
                 Open CV
               </a>
-            </button>
+            </button> */}
+            <a href="/winsa.pdf" rel="noopener noreferrer" target="_blank">
+              <button className=" rounded-lg text-stone-100 bg-teal-800 mx-3 my-3 px-3 py-2 w-50  ">
+                Open CV
+              </button>
+            </a>
+            ;
           </div>
         </Element>
 
@@ -142,17 +150,13 @@ function App() {
                 <div className="p-4">
                   <img
                     className="rounded-xl"
-                    src="../public/images/Capture.PNG"
+                    src="/Capture.PNG"
                     alt="CAPTURE"
                   />
                 </div>
                 <div className="flex justify-between p-6">
                   <div className="flex items-center space-x-4">
-                    <img
-                      className=" rounded-full"
-                      src="../public/images/Screenshot1.png"
-                      alt=""
-                    />
+                    <img className=" rounded-full" src="Capture.png" alt="" />
                     <h1 className="text-xs md:text-xs text-teal-800 font-bold">
                       World wise 🌍
                     </h1>
@@ -180,7 +184,7 @@ function App() {
                 <div className="p-4">
                   <img
                     className="rounded-xl"
-                    src="../public/images/Screenshot1 .png"
+                    src="../Screenshot1 .png"
                     alt="Dog"
                   />
                 </div>
@@ -212,10 +216,7 @@ function App() {
             <div className="min-h-screen  ">
               <div className="max-w-md  rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl hover:scale-105 transform transition-all duration-500">
                 <div className="p-4">
-                  <img
-                    className="rounded-xl"
-                    src="../public/images/laptop.svg"
-                  />
+                  <img className="rounded-xl" src="/laptop.png" />
                 </div>
                 <div className="flex justify-between p-6">
                   <div className="flex items-center space-x-4">
