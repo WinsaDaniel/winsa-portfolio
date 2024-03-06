@@ -16,7 +16,7 @@ function App() {
           <div className="flex flex-row  max-w-screen-xl  mx-auto md:items-center justify-between md:flex-row md:px-6 ">
             <div className="p-4 flex flex-row  justify-between">
               <div className="flex flex-row justify-between">
-                <header className="md:text-lg text-xs font-semibold  text-stone-100 uppercase">
+                <header className="md:text-md text-xs font-semibold  text-stone-100 uppercase ">
                   Winsa Daniel
                   <br />
                   Frontend developer
